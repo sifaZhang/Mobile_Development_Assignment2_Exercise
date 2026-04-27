@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Exercise">
         <activity
+            android:name=".JsonExercise"
+            android:exported="false" />
+        <activity
+            android:name=".FirebaseExerciseActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
