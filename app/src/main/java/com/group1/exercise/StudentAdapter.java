@@ -40,10 +40,10 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.StudentV
     @Override
     public void onBindViewHolder(@NonNull StudentViewHolder holder, int position) {
         Student s = list.get(position);
-        holder.txtFirstName.setText(s.firstName);
-        holder.txtLastName.setText(s.lastName);
-        holder.txtAge.setText(String.valueOf(s.age));
-        holder.txtEmail.setText(s.email);
+        holder.txtFirstName.setText("FirstName: " + s.firstName);
+        holder.txtLastName.setText("LastName: " + s.lastName);
+        holder.txtAge.setText(String.valueOf("Age: " + s.age));
+        holder.txtEmail.setText("Email: " + s.email);
 
 
         holder.itemView.setOnClickListener(v -> {
